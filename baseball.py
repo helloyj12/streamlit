@@ -13,7 +13,7 @@ def bar_chart():
     baseball = pd.DataFrame([]) 
 
     for i in years: 
-        df1 = pd.read_html( url + i  )[0]
+        df1 = pd.read_html(url+i)[0]
         df1['년도'] =  i 
         baseball = pd.concat([baseball, df1], axis=0)
         
@@ -25,7 +25,7 @@ def bar_chart():
 
     st.write('You selected:', option)
 
-    baseball_graph = baseball[:] [ baseball.년도==option2 ]
+    baseball_graph = baseball[baseball.년도==option]
     x = baseball_graph.팀
     y = baseball_graph.승률
     
