@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+plt.rcParams['font.family'] = 'NanumGothic'
 
 def bar_chart():
 
