@@ -90,8 +90,7 @@ def bar_chart():
         plt.text(i-0.4, v+0.01, v)
 
     plt.title( "year korea baseball winrate data", position=(0.5,1.1))
-    st.pyplot(fig)
-    st.dataframe(baseball_graph)        
+    st.pyplot(fig)    
 
 with st.form(key ='Form1'):
     with st.sidebar:
@@ -116,7 +115,7 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
     tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
 
     with tab1:
-        tab2.subheader("A tab with a chart")
+        tab1.subheader("A tab with a chart")
         bar_chart()
         
     with tab2:
